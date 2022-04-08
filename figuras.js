@@ -137,3 +137,40 @@ function calcularAreaCirculo() {
     const area = Math.PI * (radio * radio);
     alert("el area del circulo es: " + area + "cm2");
 }
+
+// Triangulo Isosceles...
+
+function validarTrianguloIs() {
+    const primerLado = document.getElementById("InputLado1TrianguloIs");
+    const lado1 =parseFloat(primerLado.value);
+
+    const segundoLado = document.getElementById("InputLado2TrianguloIs");
+    const lado2 = parseFloat(segundoLado.value);
+    
+    const baseTrianguloIs = document.getElementById("InputBaseTrianguloIs");
+    const base = parseFloat(baseTrianguloIs.value);
+
+    if (lado1 == lado2 && ((lado1 + lado2) >= base)) {
+        alert("Tu triangulo es Isosceles, podemos calcular su altura!");
+        document.getElementById("calcularAltura").disabled= false;
+    }
+    else {
+        alert("Lo siento, no son medidas para un triangulo.")
+    }
+}
+function calcularAlturaTrianguloIs() {
+    const primerLado = document.getElementById("InputLado1TrianguloIs");
+    const lado1 =parseFloat(primerLado.value);
+
+    const segundoLado = document.getElementById("InputLado2TrianguloIs");
+    const lado2 = parseFloat(segundoLado.value);
+    
+    const baseTrianguloIs = document.getElementById("InputBaseTrianguloIs");
+    const base = parseFloat(baseTrianguloIs.value);
+
+    const h = (Math.sqrt((lado1 * lado1)-((base * base)/4)));
+    
+    document.getElementById("calcularAltura").disabled= true;
+
+    alert("la altura del triangulo es: " + h  + "cm");
+}

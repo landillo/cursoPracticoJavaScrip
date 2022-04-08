@@ -53,6 +53,22 @@
             <button type="button" onclick="calcularPerimetroCirculo()">Calcular Perimetro</button><br />
             <button type="button" onclick="calcularAreaCirculo()">Calcular Área</button>
         </form>
+
+    </form>
+    <h2> Valida un Triangulo Isosceles y Calcula su altura</h2>
+    <form>
+        <label for="InputLado1TrianguloIs">Escribe cuando mide el primer lado de tu Triangulo</label>
+            <input id="InputLado1TrianguloIs" type="number" /><br />
+           
+            <label for="InputLado2TrianguloIs">Escribe cuando mide el segundo lado de tu Triangulo</label>
+            <input id="InputLado2TrianguloIs" type="number" /><br> 
+            
+            <label for="InputBaseTrianguloIs">Escribe cuando mide la base de tu Triangulo</label>
+            <input id="InputBaseTrianguloIs" type="number" /> <br />
+        
+        <button type="button" onclick="validarTrianguloIs()">Valida tu Triangulo Isosceles</button><br />
+        <button type="button" disabled="true" id="calcularAltura" onclick="calcularAlturaTrianguloIs()">Calcular Altura</button>
+    </form>
     </section>
 
 

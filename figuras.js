@@ -101,7 +101,7 @@ function calcularPerimetroTriangulo() {
     const segundoLado = document.getElementById("InputLado2Triangulo");
     const lado2 = parseFloat(segundoLado.value);
     
-    const basePeriTriangulo = document.getElementById("InputBasePeriTriangulo");
+    const basePeriTriangulo = document.getElementById("InputBaseTriangulo");
     const base = parseFloat(basePeriTriangulo.value);
     
     const perimetro= perimetroTriangulo(lado1, lado2, base);
@@ -113,7 +113,7 @@ function calcularAreaTriangulo () {
     const alturaTriangulo = document.getElementById("InputAlturaTriangulo");
     const altura = parseFloat(alturaTriangulo.value);
     
-    const baseAreaTriangulo = document.getElementById("InputBaseAreaTriangulo");
+    const baseAreaTriangulo = document.getElementById("InputBaseTriangulo");
     const base = parseFloat(baseAreaTriangulo.value);
 
     const area=areaTriangulo(base, altura);

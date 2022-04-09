@@ -1,5 +1,4 @@
 :root {
-            
     --white: #FFFFFF;
     --black: #000000;
     --very-light-pink:  #C7C7C7;
@@ -9,28 +8,158 @@
     --md: 20px;
     --lg: 30px;
 }
+html {
+    background-image: url(/cursoPracticoJavaScrip/imagenes/fondoMadera.jpg);
+    background-size: cover;
+}
+.cabecera {
+    border-radius: 25px;
+    width: 450px;
+    height: 120px;
+    margin: 20px auto;
+    background-color: rgba(73, 70, 70, .5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
 .title {
-    
-    font-size:var(--lg);
-    margin-bottom: 12px;
+    font-size:40px;
+    margin-top:10px;
+    margin-bottom: 15px;
     text-align: center;
     font-family: sans-serif;
-    color: rgb(0, 0, 0);
+    font-weight: bold;
+    color: white;
+    border-bottom: white 2px solid;
 }
 .sub-title {
 font-size: var(--md);
 text-align: center;
 font-family: sans-serif;
+padding: 5px;
+margin-top: -15px;
 }
-.cabecera {
-    width: 650px;
-    height: 150px;
-    background-color: var(--very-light-pink);
-    display:flex;
-    justify-content: center;
-    border-radius: 25px;
+/* unicia estilos para la caja de calculos del cuadrado */
+.calculosCuadrado {
+    background-color: rgba(73, 70, 70, .5);
+    color: white;
+    background-size: cover;
+    width: 400px;
+    height: 220px;
+    display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    
+    flex-direction: column;
+    font-family: sans-serif;
+    border-radius: 25px;
+}
+.tituloCuadrado{
+    border-bottom: white 1px solid;
+    text-align: center;
+}
+.perimetroCuadro{
+    background-color: rgb(114, 107, 107);
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+    height: 50px;
+}
+.areaCuadro{
+    background-color: rgb(114, 107, 107);
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+    height: 50px;
+}
+.cajaDeDatosCuadro{
+    color: white;
+    background-size: cover;
+    width: 400px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    border-radius: 25px;
+}
+.labelCuadro{
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+/* Termina estilos para caja de calculos del cuadrado */
+
+/*Inici estilos para la caja de los calculos del triangulo, area y prerimetro)*/
+
+.calculosTriangulo{
+    background-color: rgba(73, 70, 70, .5);
+    color: white;
+    background-size: cover;
+    width: 400px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.tituloTriangulo{
+    border-bottom: white 1px solid;
+    text-align: center
+}
+.cajaDeDatosTriangulo {
+    color: white;
+    background-size: cover;
+    /* width: 500px;
+    height: 500px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    border-radius: 25px;
+}
+.labelTriangulo{
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+.perimetroTriangulo{
+    background-color: rgb(114, 107, 107);
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+    height: 50px;
+    /* margin-top: -10px;
+    margin-bottom: -10px; */
+}
+.areaTriangulo{
+    background-color: rgb(114, 107, 107);
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+    height: 50px;
+    margin-left: 20px;
+    /* margin-top: -10px;
+    margin-bottom: -10px; */
+}
+.botonesTriangulo{
+    color: white;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: sans-serif;
+    border-radius: 25px;
 }
